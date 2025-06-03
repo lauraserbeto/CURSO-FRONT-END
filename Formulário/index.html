@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Adote+</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img src="img/Adote-Photoroom.png" alt="">
+      </div>
+      <div class="form-container">
+        <div class="form-header">
+          <p>Formulário</p>
+        </div>
+        <div class="form-body">
+            <h1 class="form-title">Adoção é um ato de amor — comece aqui!</h1>
+
+            <!--INFORMAÇÕES SOBRE O DOADOR-->
+          <p>
+           <b>Complete as informações sobre você (doador): </b>
+          </p>
+
+          <form>
+            <!--input para nome do doador-->
+            <div class="box-input">
+              <label for="name"
+                >Nome <span class="required-field">*</span></label
+              >
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="block"
+                placeholder="Digite o seu nome completo"
+                minlength="1"
+                maxlength="30"
+                required
+              />
+            </div>
+
+            <!--input para endereço do doador-->
+            <div class="box-input">
+              <label for="address"
+                >Endereço <span class="required-field">*</span></label
+              >
+              <input
+                type="text"
+                name="address"
+                id="address"
+                class="block"
+                placeholder="Digite seu endereço"
+                required
+              />
+            </div>
+
+            <!--input para email do doador-->
+            <div class="box-input">
+                <label for="email"
+                  >Endereço <span class="required-field">*</span></label
+                >
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  class="block"
+                  placeholder="Digite seu e-mail de contato"
+                  required
+                />
+            </div>
+
+            <!--input para telefone do doador-->
+            <div class="box-input">
+                <label for="phone"
+                  >Celular <span class="required-field">*</span></label
+                >
+                <input
+                  type="tel"
+                  name="phone"
+                  id="phone"
+                  class="block"
+                  placeholder="(DDD) 90000-0000"
+                  required
+                />
+            </div>
+
+
+            <!--INFORMAÇÕES SOBRE O PET-->
+            <p><b>Complete as informações sobre o pet:</b></p>
+
+            <!--input para o nome do pet-->
+            <div class="box-input">
+                <label for="pet-name"
+                  >Nome do pet </label
+                >
+                <input
+                  type="text"
+                  name="pet-name"
+                  id="pet-name"
+                  class="block"
+                  placeholder="Digite o nome do pet (se tiver)"
+                />
+              </div>
+
+              <!--input para a espécie do pet-->
+              <div class="box-input">
+                <label for="specie"
+                  >Espécie <span class="required-field">*</span></label
+                >
+                <input
+                  type="text"
+                  name="specie"
+                  id="specie"
+                  class="block"
+                  placeholder="Digite qual a espécie (Gato, Cachorro, entre outros)"
+                  minlength="1"
+                  maxlength="30"
+                  required
+                />
+              </div>
+
+              <!--input para a raça do pet-->
+              <div class="box-input">
+                <label for="race"
+                  >Raça </label
+                >
+                <input
+                  type="text"
+                  name="race"
+                  id="race"
+                  class="block"
+                  placeholder="Digite qual a raça (se tiver)"
+                />
+              </div>
+
+              <!--input para a idade do pet-->
+              <div class="box-input">
+                <p>Idade aproximada <span class="required-field">*</span></p>
+                <div class="alternative1">
+                  <input type="radio" id="puppy" name="gender" />
+                  <label for="puppy">Filhote (0–1 ano)</label>
+                </div>
+                <div>
+                  <input type="radio" id="kid" name="gender" />
+                  <label for="kid">Jovem (1–4 anos)</label>
+                </div>
+                <div>
+                  <input type="radio" id="adult" name="gender" />
+                  <label for="adult">Adulto (5–9 anos)</label>
+                </div>
+                <div>
+                  <input type="radio" id="aged" name="gender" />
+                  <label for="aged">Idoso (10+ anos)</label>
+                </div>
+              </div>
+
+
+              <!--input para o sexo do pet-->
+              <div class="box-input">
+                <p>Sexo <span class="required-field">*</span></p>
+                <input type="radio" id="boy" name="gender" />
+                <label for="boy">Macho</label>
+                <input type="radio" id="girl" name="gender" />
+                <label for="girl">Fêmea</label>
+              </div>
+
+              <!--input para saber se o pet é castrado-->
+              <div class="box-input">
+                <p>Castrado? <span class="required-field">*</span></p>
+                <input type="radio" id="yes" name="castration" />
+                <label for="yes">Sim</label>
+                <input type="radio" id="no" name="castration" />
+                <label for="no">Não</label>
+              </div>
+
+              <!--input para saber se o pet é vacinado-->
+              <div class="box-input">
+                <p>Vacinado? <span class="required-field">*</span></p>
+                <input type="radio" id="yes" name="vaccine" />
+                <label for="yes">Sim</label>
+                <input type="radio" id="no" name="vaccine" />
+                <label for="no">Não</label>
+                <input type="radio" id="partially" name="vaccine" />
+                <label for="partially">Parcialmente</label>
+              </div>
+
+              <!--input para saber o porte (tamanho) do pet-->
+              <div class="box-input">
+                <p>Porte <span class="required-field">*</span></p>
+                <input type="radio" id="small" name="size" />
+                <label for="small">Pequeno</label>
+                <input type="radio" id="medium" name="size" />
+                <label for="medium">Grande</label>
+                <input type="radio" id="big" name="size" />
+                <label for="big">Médio</label>
+              </div>
+
+              <!--input para saber sobre a personalidade do pet-->
+              <div class="optional-box">
+                <p>Comportamento</p>
+                <ul class="optional-list">
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="social"
+                      name="optional[]"
+                      value="social"
+                    />
+                    <label for="social">Sociável</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="fun"
+                      name="optional[]"
+                      value="fun"
+                    />
+                    <label for="fun">Brincalhão</label>
+                  </li>
+                  <li>
+                    <input type="checkbox" id="calm" name="optional[]" value="calm" />
+                    <label for="calm">Calmo</label>
+                  </li>
+                </ul>
+              </div> 
+              <div class="optional-box">
+                <ul class="optional-list">
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="aggresive"
+                      name="optional[]"
+                      value="aggresive"
+                    />
+                    <label for="aggresive">Agressivo com estranhos</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="pet-interation"
+                      name="optional[]"
+                      value="pet-interation"
+                    />
+                    <label for="pet-interation">Se dá bem com outros animais</label>
+                  </li>
+                  <li>
+                    <input
+                      type="checkbox"
+                      id="like-kids"
+                      name="optional[]"
+                      value="like-kids"
+                    />
+                    <label for="like-kids">Gosta de crianças</label>
+                  </li>
+                </ul>
+              </div>
+                
+
+              <!--input para saber o motivo da doação-->
+              <div class="box-input">
+                <label for="motive-description"
+                  >Motivo da doação <span class="required-field">*</span></label
+                >
+                <textarea
+                  name="motive-description"
+                  id="motive-description"
+                  class="block"
+                  placeholder="Aqui você descreve o motivo da doação do pet"
+                ></textarea>
+              </div>
+            
+              <!--input para anexar fotos do pet-->
+              <div class="box-input">
+                <p>Fotos do pet: <span class="required-field">*</span></p>
+                <input
+                  type="file"
+                  multiple
+                  accept="image/png, image/jpg"
+                  id="pet-img"
+                  name="pet-img"
+                  required
+                />
+              </div>
+
+
+              <!--input para cadastrar o pet e finalizar o formulário-->
+            <input type="submit" value="Cadastrar pet" class="btn-submit" />
+            
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
